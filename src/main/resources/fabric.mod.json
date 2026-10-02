@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "crazy_stuff",
+  "version": "1.0.0",
+  "name": "crazy_stuff",
+  "authors": [
+    "MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "Not specified",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mcreator.crazystuff.CrazyStuffMod"
+    ],
+    "client": [
+      "net.mcreator.crazystuff.CrazyStuffModClient"
+    ]
+  },
+  "mixins": [
+    "crazy_stuff.mixins.json"
+  ],
+  "accessWidener": "META-INF/crazy_stuff.classtweaker",
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
