@@ -9,6 +9,16 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Coolstuff",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolstuff",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -17,7 +27,8 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item_group.crazy_stuff.poop": "Poop"
+      "item_group.crazy_stuff.poop": "Poop",
+      "item_group.crazy_stuff.coolstuff": "Coolstuff"
     }
   },
   "metadata": {
