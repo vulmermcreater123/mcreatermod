@@ -133,6 +133,6 @@
     "frequencyPerChunks": 2,
     "frequencyOnChunk": 1,
     "minGenerateHeight": 20,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 120
   }
 }

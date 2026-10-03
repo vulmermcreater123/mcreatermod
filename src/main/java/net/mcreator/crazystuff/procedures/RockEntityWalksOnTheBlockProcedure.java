@@ -7,11 +7,9 @@ import net.minecraft.server.permissions.LevelBasedPermissionSet;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
-import net.minecraft.ChatFormatting;
 
 import net.mcreator.crazystuff.CrazyStuffMod;
 
@@ -23,17 +21,14 @@ public class RockEntityWalksOnTheBlockProcedure {
 			Entity _ent = entity;
 			if (!_ent.level().isClientSide() && _ent.level().getServer() != null) {
 				_ent.level().getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null,
-						LevelBasedPermissionSet.OWNER, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "Effect @n slowness 255 255");
+						LevelBasedPermissionSet.OWNER, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "effect @n slowness 255 255");
 			}
-		}
-		if (world instanceof ServerLevel _level) {
-			_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("You Have Underrestimated The Power Of Rocks,Now its my revenge! ").withColor(0xd40000).withStyle(ChatFormatting.BOLD), false);
 		}
 		CrazyStuffMod.queueServerWork(60, () -> {
 			{
 				Entity _ent = entity;
 				if (_ent.level() instanceof ServerLevel _serverLevel) {
-					_ent.hurtServer(_serverLevel, new DamageSource(world.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, Identifier.parse("crazy_stuff:tripped_on_a_rock")))), 1);
+					_ent.hurtServer(_serverLevel, new DamageSource(world.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, Identifier.parse("crazy_stuff:tripped_on_a_rock")))), 40);
 				}
 			}
 		});
