@@ -25,12 +25,7 @@ public class SlangbellaItem extends Item {
 
 	@Override
 	public ItemUseAnimation getUseAnimation(ItemStack itemstack) {
-		return ItemUseAnimation.CROSSBOW;
-	}
-
-	@Override
-	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 4;
+		return ItemUseAnimation.TRIDENT;
 	}
 
 	@Override
