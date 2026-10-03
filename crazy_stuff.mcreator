@@ -111,6 +111,61 @@
           "src/main/java/net/mcreator/crazystuff/item/SlangbellaItem.java"
         ]
       }
+    },
+    {
+      "name": "RockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/procedures/RockEntityWalksOnTheBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Rock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/block/RockBlock.java",
+          "src/main/resources/data/crazy_stuff/worldgen/placed_feature/rock.json",
+          "src/main/resources/data/crazy_stuff/loot_table/blocks/rock.json",
+          "src/main/resources/assets/crazy_stuff/models/item/rock.json",
+          "src/main/resources/assets/crazy_stuff/items/rock.json",
+          "src/main/resources/data/crazy_stuff/worldgen/configured_feature/rock.json",
+          "src/main/resources/assets/crazy_stuff/blockstates/rock.json",
+          "src/main/resources/assets/crazy_stuff/models/block/rock_pressed.json",
+          "src/main/resources/assets/crazy_stuff/models/block/rock_inventory.json",
+          "src/main/resources/assets/crazy_stuff/models/block/rock.json"
+        ]
+      }
+    },
+    {
+      "name": "TrippedOnARock",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripped_on_a_rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/crazy_stuff/damage_type/tripped_on_a_rock.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -123,6 +178,12 @@
     ],
     "ITEMS:minecraft:enchantable/durability": [
       "~SmachHammer@CUSTOM:SmachHammer"
+    ],
+    "BLOCKS:minecraft:buttons": [
+      "~Rock@CUSTOM:Rock"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~Rock@CUSTOM:Rock"
     ]
   },
   "tab_element_order": {},
@@ -131,14 +192,20 @@
       "item_group.crazy_stuff.poop": "Poop",
       "item_group.crazy_stuff.coolstuff": "Coolstuff",
       "item.crazy_stuff.smach_hammer": "Smach Hammer",
-      "item.crazy_stuff.slangbella": "Slangbella"
+      "item.crazy_stuff.slangbella": "Slangbella",
+      "item.crazy_stuff.rock": "Rock",
+      "death.attack.tripped_on_a_rock.player": "%1$s Tripped On A Rock whilst trying to escape %2$s",
+      "death.attack.tripped_on_a_rock.item": "%1$s was killed by %2$s using \u003cThe Rock\u003e",
+      "death.attack.tripped_on_a_rock": "%1$s Tripped On a Rock"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModBlocks.java",
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModItems.java",
       "src/main/java/net/mcreator/crazystuff/mixin/RepairItemRecipeMixin.java",
       "src/main/java/net/mcreator/crazystuff/mixin/ServerPlayerMixin.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModFeatures.java",
       "src/main/java/net/mcreator/crazystuff/mixin/BlockItemMixin.java",
       "src/main/java/net/mcreator/crazystuff/event/LivingEntityEvents.java",
       "src/main/java/net/mcreator/crazystuff/mixin/LivingEntityMixin.java",

@@ -1,0 +1,8 @@
+{
+  "_fv": 89,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_execute_command\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">Effect @n slowness 255 255</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><next><block type=\"world_send_chat\"><field name=\"color\">#d40000</field><field name=\"bold\">TRUE</field><field name=\"italic\">FALSE</field><field name=\"underlined\">FALSE</field><value name=\"text\"><block type=\"text\"><field name=\"TEXT\">You Have Underrestimated The Power Of Rocks,Now its my revenge! </field></block></value><next><block type=\"wait\"><value name=\"ticks\"><block type=\"math_number\"><field name=\"NUM\">60</field></block></value><statement name=\"do\"><block type=\"deal_damage\"><value name=\"amount\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"damagesource\"><block type=\"damagesource_from_type\"><field name=\"damagetype\">CUSTOM:TrippedOnARock</field></block></value></block></statement></block></next></block></next></block></next></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

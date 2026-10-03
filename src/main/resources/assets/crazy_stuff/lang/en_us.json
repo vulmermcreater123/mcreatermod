@@ -2,5 +2,9 @@
   "item_group.crazy_stuff.poop": "Poop",
   "item_group.crazy_stuff.coolstuff": "Coolstuff",
   "item.crazy_stuff.smach_hammer": "Smach Hammer",
-  "item.crazy_stuff.slangbella": "Slangbella"
+  "item.crazy_stuff.slangbella": "Slangbella",
+  "item.crazy_stuff.rock": "Rock",
+  "death.attack.tripped_on_a_rock.player": "%1$s Tripped On A Rock whilst trying to escape %2$s",
+  "death.attack.tripped_on_a_rock.item": "%1$s was killed by %2$s using <The Rock>",
+  "death.attack.tripped_on_a_rock": "%1$s Tripped On a Rock"
 }
