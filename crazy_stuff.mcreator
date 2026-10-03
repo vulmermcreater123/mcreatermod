@@ -166,6 +166,18 @@
           "src/main/resources/data/crazy_stuff/damage_type/tripped_on_a_rock.json"
         ]
       }
+    },
+    {
+      "name": "Rockrec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rockrec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/crazy_stuff/recipe/rockrec.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],

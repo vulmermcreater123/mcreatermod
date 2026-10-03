@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:cobblestone"
+  ],
+  "result": {
+    "id": "crazy_stuff:rock",
+    "count": 1
+  }
+}

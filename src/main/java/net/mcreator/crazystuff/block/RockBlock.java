@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.InsideBlockEffectApplier;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
@@ -26,8 +27,14 @@ public class RockBlock extends ButtonBlock {
 	public static final Predicate<BiomeSelectionContext> GENERATE_BIOMES = BiomeSelectors.all();
 
 	@Override
-	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
-		super.stepOn(world, pos, blockstate, entity);
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity, InsideBlockEffectApplier insideBlockEffectApplier, boolean isPrecise) {
+		super.entityInside(blockstate, world, pos, entity, insideBlockEffectApplier, isPrecise);
+		RockEntityWalksOnTheBlockProcedure.execute(world, entity);
+	}
+
+	@Override
+	public void fallOn(Level world, BlockState blockstate, BlockPos pos, Entity entity, double distance) {
+		super.fallOn(world, blockstate, pos, entity, distance);
 		RockEntityWalksOnTheBlockProcedure.execute(world, entity);
 	}
 }
