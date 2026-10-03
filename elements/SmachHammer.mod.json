@@ -1,0 +1,68 @@
+{
+  "_fv": 89,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "smachhammer",
+    "customModelName": "Normal",
+    "guiTexture": "",
+    "customProperties": {},
+    "states": [],
+    "animations": [],
+    "name": "Smach Hammer",
+    "rarity": "RARE",
+    "creativeTabs": [
+      "CUSTOM:Coolstuff"
+    ],
+    "stackSize": 1,
+    "enchantability": 4,
+    "useDuration": 3,
+    "toolType": 2.5,
+    "damageCount": 120,
+    "recipeRemainder": "",
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "isPiglinCurrency": false,
+    "repairItems": [
+      "Items.BREEZE_ROD",
+      "Blocks.HEAVY_CORE",
+      "Items.IRON_INGOT"
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 4.0,
+    "attackSpeed": 1.2,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "openGUIOnRightClick": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 99,
+    "onEntityHitWith": "SmachHammerLivingEntityIsHitWithItem",
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": "Arrow",
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": "",
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "trident",
+    "isMusicDisc": false,
+    "musicDiscMusic": "",
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 100,
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": [],
+    "attributeModifiers": []
+  }
+}

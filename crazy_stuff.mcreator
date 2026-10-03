@@ -19,38 +19,100 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "SmachHammer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smach_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/item/SmachHammerItem.java",
+          "src/main/resources/assets/crazy_stuff/models/item/smach_hammer.json",
+          "src/main/resources/assets/crazy_stuff/items/smach_hammer.json"
+        ]
+      }
+    },
+    {
+      "name": "SmachHammerLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smach_hammer_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/procedures/SmachHammerLivingEntityIsHitWithItemProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:crazy_stuff:smach_hammer_repair_items": [
+      "~SmachHammer@Items.IRON_INGOT",
+      "~SmachHammer@Blocks.HEAVY_CORE",
+      "~SmachHammer@Items.BREEZE_ROD"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~SmachHammer@CUSTOM:SmachHammer"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item_group.crazy_stuff.poop": "Poop",
-      "item_group.crazy_stuff.coolstuff": "Coolstuff"
+      "item_group.crazy_stuff.coolstuff": "Coolstuff",
+      "item.crazy_stuff.smach_hammer": "Smach Hammer"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/crazystuff/mixin/LivingEntityMixin.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/PlayerMixin.java",
-      "src/main/java/net/mcreator/crazystuff/event/MiscEvents.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/ExperienceOrbMixin.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModItems.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/RepairItemRecipeMixin.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/ServerPlayerMixin.java",
       "src/main/java/net/mcreator/crazystuff/mixin/BlockItemMixin.java",
-      "src/main/resources/crazy_stuff.mixins.json",
-      "src/main/java/net/mcreator/crazystuff/mixin/ItemStackMixin.java",
-      "src/main/java/net/mcreator/crazystuff/CrazyStuffMod.java",
-      "src/main/resources/fabric.mod.json",
-      "src/main/java/net/mcreator/crazystuff/event/ItemEvents.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/BoneMealItemMixin.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/CommandsMixin.java",
-      "src/main/resources/META-INF/crazy_stuff.classtweaker",
       "src/main/java/net/mcreator/crazystuff/event/LivingEntityEvents.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/LivingEntityMixin.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/CommandsMixin.java",
+      "src/main/resources/crazy_stuff.mixins.json",
       "src/main/java/net/mcreator/crazystuff/CrazyStuffModClient.java",
-      "src/main/java/net/mcreator/crazystuff/event/PlayerEvents.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/BoneMealItemMixin.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/crazystuff/event/BlockEvents.java"
+      "src/main/resources/fabric.mod.json",
+      "src/main/java/net/mcreator/crazystuff/event/BlockEvents.java",
+      "src/main/java/net/mcreator/crazystuff/event/MiscEvents.java",
+      "src/main/java/net/mcreator/crazystuff/CrazyStuffMod.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/ItemStackMixin.java",
+      "src/main/java/net/mcreator/crazystuff/event/PlayerEvents.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/PlayerMixin.java",
+      "src/main/java/net/mcreator/crazystuff/event/ItemEvents.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/ExperienceOrbMixin.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModTabs.java",
+      "src/main/resources/META-INF/crazy_stuff.classtweaker"
     ]
   },
   "foldersRoot": {

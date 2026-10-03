@@ -15,7 +15,7 @@ dependencies {
     implementation "net.fabricmc:fabric-loader:0.19.3"
 
     // Fabric API
-    implementation "net.fabricmc.fabric-api:fabric-api:0.154.0+26.1.2"
+    implementation "net.fabricmc.fabric-api:fabric-api:0.155.2+26.1.2"
 }
 
 // We need to do this because MCreator doesn't allow to split armor textures in multiple folders
