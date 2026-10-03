@@ -106,9 +106,53 @@
       "registry_name": "slangbella",
       "metadata": {
         "files": [
-          "src/main/resources/assets/crazy_stuff/items/slangbella.json",
           "src/main/resources/assets/crazy_stuff/models/item/slangbella.json",
+          "src/main/resources/assets/crazy_stuff/items/slangbella.json",
           "src/main/java/net/mcreator/crazystuff/item/SlangbellaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PearlWandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pearl_wand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/procedures/PearlWandRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PearlWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pearl_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/crazy_stuff/items/pearl_wand.json",
+          "src/main/java/net/mcreator/crazystuff/item/PearlWandItem.java",
+          "src/main/resources/assets/crazy_stuff/models/item/pearl_wand.json"
         ]
       }
     }
@@ -131,33 +175,34 @@
       "item_group.crazy_stuff.poop": "Poop",
       "item_group.crazy_stuff.coolstuff": "Coolstuff",
       "item.crazy_stuff.smach_hammer": "Smach Hammer",
-      "item.crazy_stuff.slangbella": "Slangbella"
+      "item.crazy_stuff.slangbella": "Slangbella",
+      "item.crazy_stuff.pearl_wand": "Pearl Wand"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModItems.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/RepairItemRecipeMixin.java",
       "src/main/java/net/mcreator/crazystuff/mixin/ServerPlayerMixin.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/BlockItemMixin.java",
-      "src/main/java/net/mcreator/crazystuff/event/LivingEntityEvents.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/RepairItemRecipeMixin.java",
       "src/main/java/net/mcreator/crazystuff/mixin/LivingEntityMixin.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/CommandsMixin.java",
-      "src/main/resources/crazy_stuff.mixins.json",
-      "src/main/java/net/mcreator/crazystuff/CrazyStuffModClient.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/BoneMealItemMixin.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/fabric.mod.json",
-      "src/main/java/net/mcreator/crazystuff/event/BlockEvents.java",
-      "src/main/java/net/mcreator/crazystuff/event/MiscEvents.java",
-      "src/main/java/net/mcreator/crazystuff/CrazyStuffMod.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/ItemStackMixin.java",
-      "src/main/java/net/mcreator/crazystuff/event/PlayerEvents.java",
       "src/main/java/net/mcreator/crazystuff/mixin/PlayerMixin.java",
-      "src/main/java/net/mcreator/crazystuff/event/ItemEvents.java",
+      "src/main/java/net/mcreator/crazystuff/event/MiscEvents.java",
       "src/main/java/net/mcreator/crazystuff/mixin/ExperienceOrbMixin.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/BlockItemMixin.java",
+      "src/main/resources/crazy_stuff.mixins.json",
+      "src/main/java/net/mcreator/crazystuff/mixin/ItemStackMixin.java",
+      "src/main/java/net/mcreator/crazystuff/CrazyStuffMod.java",
+      "src/main/resources/fabric.mod.json",
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModTabs.java",
-      "src/main/resources/META-INF/crazy_stuff.classtweaker"
+      "src/main/java/net/mcreator/crazystuff/event/ItemEvents.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/BoneMealItemMixin.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/CommandsMixin.java",
+      "src/main/resources/META-INF/crazy_stuff.classtweaker",
+      "src/main/java/net/mcreator/crazystuff/event/LivingEntityEvents.java",
+      "src/main/java/net/mcreator/crazystuff/CrazyStuffModClient.java",
+      "src/main/java/net/mcreator/crazystuff/event/PlayerEvents.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/crazystuff/event/BlockEvents.java"
     ]
   },
   "foldersRoot": {
