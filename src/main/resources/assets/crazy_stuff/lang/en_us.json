@@ -6,5 +6,6 @@
   "item.crazy_stuff.rock": "Rock",
   "death.attack.tripped_on_a_rock.player": "%1$s Tripped On A Rock whilst trying to escape %2$s",
   "death.attack.tripped_on_a_rock.item": "%1$s was killed by %2$s using <The Rock>",
-  "death.attack.tripped_on_a_rock": "%1$s Tripped On a Rock"
+  "death.attack.tripped_on_a_rock": "%1$s Tripped On a Rock",
+  "item.crazy_stuff.amos_block": "Amos Block"
 }

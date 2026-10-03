@@ -4,6 +4,7 @@
 package net.mcreator.crazystuff.init;
 
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.resources.ResourceKey;
@@ -17,6 +18,7 @@ import net.mcreator.crazystuff.CrazyStuffMod;
 
 public class CrazyStuffModTabs {
 	public static ResourceKey<CreativeModeTab> TAB_COOLSTUFF = ResourceKey.create(Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(CrazyStuffMod.MODID, "coolstuff"));
+	public static ResourceKey<CreativeModeTab> TAB_POOP = ResourceKey.create(Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(CrazyStuffMod.MODID, "poop"));
 
 	public static void load() {
 		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, TAB_COOLSTUFF,
@@ -24,6 +26,10 @@ public class CrazyStuffModTabs {
 					tabData.accept(CrazyStuffModItems.SMACH_HAMMER);
 					tabData.accept(CrazyStuffModItems.SLANGBELLA);
 					tabData.accept(CrazyStuffModBlocks.ROCK.asItem());
+				}).build());
+		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, TAB_POOP,
+				CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0).title(Component.translatable("item_group.crazy_stuff.poop")).icon(() -> new ItemStack(Items.TADPOLE_SPAWN_EGG)).displayItems((parameters, tabData) -> {
+					tabData.accept(CrazyStuffModBlocks.AMOS_BLOCK.asItem());
 				}).build());
 	}
 }
