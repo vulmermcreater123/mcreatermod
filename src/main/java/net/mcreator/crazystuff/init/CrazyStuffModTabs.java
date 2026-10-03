@@ -22,6 +22,7 @@ public class CrazyStuffModTabs {
 		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, TAB_COOLSTUFF,
 				CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0).title(Component.translatable("item_group.crazy_stuff.coolstuff")).icon(() -> new ItemStack(Blocks.HEAVY_CORE)).displayItems((parameters, tabData) -> {
 					tabData.accept(CrazyStuffModItems.SMACH_HAMMER);
+					tabData.accept(CrazyStuffModItems.SLANGBELLA);
 				}).build());
 	}
 }

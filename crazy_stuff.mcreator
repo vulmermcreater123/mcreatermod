@@ -79,6 +79,38 @@
           "src/main/resources/data/crazy_stuff/recipe/smachhammerrec.json"
         ]
       }
+    },
+    {
+      "name": "SlangbellaLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slangbella_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/procedures/SlangbellaLivingEntityIsHitWithItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Slangbella",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slangbella",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/crazy_stuff/items/slangbella.json",
+          "src/main/resources/assets/crazy_stuff/models/item/slangbella.json",
+          "src/main/java/net/mcreator/crazystuff/item/SlangbellaItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -98,7 +130,8 @@
     "en_us": {
       "item_group.crazy_stuff.poop": "Poop",
       "item_group.crazy_stuff.coolstuff": "Coolstuff",
-      "item.crazy_stuff.smach_hammer": "Smach Hammer"
+      "item.crazy_stuff.smach_hammer": "Smach Hammer",
+      "item.crazy_stuff.slangbella": "Slangbella"
     }
   },
   "metadata": {

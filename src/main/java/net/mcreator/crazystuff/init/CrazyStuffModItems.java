@@ -10,15 +10,18 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.crazystuff.item.SmachHammerItem;
+import net.mcreator.crazystuff.item.SlangbellaItem;
 import net.mcreator.crazystuff.CrazyStuffMod;
 
 import java.util.function.Function;
 
 public class CrazyStuffModItems {
 	public static Item SMACH_HAMMER;
+	public static Item SLANGBELLA;
 
 	public static void load() {
 		SMACH_HAMMER = register("smach_hammer", SmachHammerItem::new);
+		SLANGBELLA = register("slangbella", SlangbellaItem::new);
 	}
 
 	// Start of user code block custom items
