@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    " ba",
+    "b  "
+  ],
+  "key": {
+    "a": "minecraft:iron_block",
+    "b": "minecraft:breeze_rod"
+  },
+  "result": {
+    "id": "crazy_stuff:smach_hammer",
+    "count": 1
+  }
+}

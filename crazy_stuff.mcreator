@@ -67,6 +67,18 @@
           "src/main/java/net/mcreator/crazystuff/procedures/SmachHammerLivingEntityIsHitWithItemProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Smachhammerrec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smachhammerrec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/crazy_stuff/recipe/smachhammerrec.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
