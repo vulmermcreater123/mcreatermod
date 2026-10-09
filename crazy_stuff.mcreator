@@ -142,16 +142,16 @@
       "registry_name": "rock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/crazystuff/block/RockBlock.java",
-          "src/main/resources/data/crazy_stuff/worldgen/placed_feature/rock.json",
-          "src/main/resources/data/crazy_stuff/loot_table/blocks/rock.json",
-          "src/main/resources/assets/crazy_stuff/models/item/rock.json",
-          "src/main/resources/assets/crazy_stuff/items/rock.json",
           "src/main/resources/data/crazy_stuff/worldgen/configured_feature/rock.json",
-          "src/main/resources/assets/crazy_stuff/blockstates/rock.json",
           "src/main/resources/assets/crazy_stuff/models/block/rock_pressed.json",
           "src/main/resources/assets/crazy_stuff/models/block/rock_inventory.json",
-          "src/main/resources/assets/crazy_stuff/models/block/rock.json"
+          "src/main/resources/assets/crazy_stuff/items/rock.json",
+          "src/main/resources/assets/crazy_stuff/models/item/rock.json",
+          "src/main/java/net/mcreator/crazystuff/block/RockBlock.java",
+          "src/main/resources/assets/crazy_stuff/models/block/rock.json",
+          "src/main/resources/data/crazy_stuff/worldgen/placed_feature/rock.json",
+          "src/main/resources/data/crazy_stuff/loot_table/blocks/rock.json",
+          "src/main/resources/assets/crazy_stuff/blockstates/rock.json"
         ]
       }
     },
@@ -187,12 +187,12 @@
       "registry_name": "amos_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/crazy_stuff/models/block/amos_block.json",
-          "src/main/resources/data/crazy_stuff/loot_table/blocks/amos_block.json",
-          "src/main/resources/assets/crazy_stuff/models/item/amos_block.json",
-          "src/main/resources/assets/crazy_stuff/items/amos_block.json",
           "src/main/java/net/mcreator/crazystuff/block/AmosBlockBlock.java",
-          "src/main/resources/assets/crazy_stuff/blockstates/amos_block.json"
+          "src/main/resources/assets/crazy_stuff/items/amos_block.json",
+          "src/main/resources/assets/crazy_stuff/models/block/amos_block.json",
+          "src/main/resources/assets/crazy_stuff/models/item/amos_block.json",
+          "src/main/resources/assets/crazy_stuff/blockstates/amos_block.json",
+          "src/main/resources/data/crazy_stuff/loot_table/blocks/amos_block.json"
         ]
       }
     },

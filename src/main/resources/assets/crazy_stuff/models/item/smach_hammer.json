@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "crazy_stuff:custom/thor-hammer_-_converted",
   "textures": {
-    "layer0": "crazy_stuff:item/smachhammer"
+    "0": "crazy_stuff:block/hammer",
+    "particle": "crazy_stuff:item/smachhammer"
   }
 }
