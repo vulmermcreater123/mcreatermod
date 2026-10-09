@@ -7,5 +7,7 @@
   "death.attack.tripped_on_a_rock.player": "%1$s Tripped On A Rock whilst trying to escape %2$s",
   "death.attack.tripped_on_a_rock.item": "%1$s was killed by %2$s using <The Rock>",
   "death.attack.tripped_on_a_rock": "%1$s Tripped On a Rock",
-  "item.crazy_stuff.amos_block": "Amos Block"
+  "item.crazy_stuff.amos_block": "Amos Block",
+  "advancements.smaching_birds.descr": "craft a hammer",
+  "advancements.smaching_birds.title": "Smaching Birds"
 }
