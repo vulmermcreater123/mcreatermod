@@ -28,6 +28,7 @@
       "registry_name": "smach_hammer",
       "metadata": {
         "files": [
+          "src/main/resources/assets/crazy_stuff/models/item/smach_hammer_gui.json",
           "src/main/java/net/mcreator/crazystuff/item/SmachHammerItem.java",
           "src/main/resources/assets/crazy_stuff/models/item/smach_hammer.json",
           "src/main/resources/assets/crazy_stuff/items/smach_hammer.json"
@@ -237,6 +238,21 @@
           "src/main/resources/data/crazy_stuff/advancement/smaching_birds.json"
         ]
       }
+    },
+    {
+      "name": "Scary",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scary",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/crazy_stuff/items/scary_spawn_egg.json",
+          "src/main/resources/assets/crazy_stuff/models/item/scary_spawn_egg.json",
+          "src/main/java/net/mcreator/crazystuff/entity/ScaryEntity.java",
+          "src/main/java/net/mcreator/crazystuff/client/renderer/ScaryRenderer.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -270,7 +286,9 @@
       "death.attack.tripped_on_a_rock": "%1$s Tripped On a Rock",
       "item.crazy_stuff.amos_block": "Amos Block",
       "advancements.smaching_birds.descr": "craft a hammer",
-      "advancements.smaching_birds.title": "Smaching Birds"
+      "advancements.smaching_birds.title": "Smaching Birds",
+      "item.crazy_stuff.scary_spawn_egg": "¨Irritator Spawn Egg",
+      "entity.crazy_stuff.scary": "¨Irritator"
     }
   },
   "metadata": {
@@ -280,7 +298,10 @@
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModItems.java",
       "src/main/java/net/mcreator/crazystuff/mixin/ServerPlayerMixin.java",
       "src/main/java/net/mcreator/crazystuff/mixin/RepairItemRecipeMixin.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModEntityRenderers.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModEntities.java",
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModFeatures.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModModels.java",
       "src/main/java/net/mcreator/crazystuff/mixin/LivingEntityMixin.java",
       "src/main/java/net/mcreator/crazystuff/mixin/PlayerMixin.java",
       "src/main/java/net/mcreator/crazystuff/event/MiscEvents.java",

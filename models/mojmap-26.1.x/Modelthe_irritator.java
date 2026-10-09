@@ -1,0 +1,502 @@
+// Made with Blockbench 5.1.1
+// Exported for Minecraft version 1.17 or later with Mojang mappings
+// Paste this class into your mod and generate all required imports
+
+public class Modelthe_irritator<T extends Entity> extends EntityModel<T> {
+	// This layer location should be baked with EntityRendererProvider.Context in
+	// the entity renderer and passed into this model's constructor
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
+			new ResourceLocation("modid", "the_irritator"), "main");
+	private final ModelPart Sketchfab_model;
+	private final ModelPart root;
+	private final ModelPart GLTF_SceneRootNode;
+	private final ModelPart _90;
+	private final ModelPart base_89;
+	private final ModelPart lowerbody_88;
+	private final ModelPart upperbody_69;
+	private final ModelPart neck_38;
+	private final ModelPart ne_37;
+	private final ModelPart head_36;
+	private final ModelPart jaw_35;
+	private final ModelPart jaw_30;
+	private final ModelPart jaw_31;
+	private final ModelPart jaw_32;
+	private final ModelPart jaw_33;
+	private final ModelPart jaw_34;
+	private final ModelPart head_20;
+	private final ModelPart head_21;
+	private final ModelPart head_22;
+	private final ModelPart head_23;
+	private final ModelPart head_24;
+	private final ModelPart head_25;
+	private final ModelPart head_26;
+	private final ModelPart head_27;
+	private final ModelPart head_28;
+	private final ModelPart head_29;
+	private final ModelPart ne_19;
+	private final ModelPart neck_18;
+	private final ModelPart rightupperarm_53;
+	private final ModelPart rightlowerarm_52;
+	private final ModelPart righthand_51;
+	private final ModelPart righthand_44;
+	private final ModelPart righthand_45;
+	private final ModelPart righthand_46;
+	private final ModelPart righthand_47;
+	private final ModelPart righthand_48;
+	private final ModelPart righthand_49;
+	private final ModelPart righthand_50;
+	private final ModelPart rightlowerarm_42;
+	private final ModelPart rightlowerarm_43;
+	private final ModelPart rightupperarm_39;
+	private final ModelPart rightupperarm_40;
+	private final ModelPart rightupperarm_41;
+	private final ModelPart leftupperarm_68;
+	private final ModelPart leftlowerarm_67;
+	private final ModelPart lefthand_66;
+	private final ModelPart lefthand_59;
+	private final ModelPart lefthand_60;
+	private final ModelPart lefthand_61;
+	private final ModelPart lefthand_62;
+	private final ModelPart lefthand_63;
+	private final ModelPart lefthand_64;
+	private final ModelPart lefthand_65;
+	private final ModelPart leftlowerarm_57;
+	private final ModelPart leftlowerarm_58;
+	private final ModelPart leftupperarm_54;
+	private final ModelPart leftupperarm_55;
+	private final ModelPart leftupperarm_56;
+	private final ModelPart upperbody_8;
+	private final ModelPart upperbody_9;
+	private final ModelPart upperbody_10;
+	private final ModelPart upperbody_11;
+	private final ModelPart upperbody_12;
+	private final ModelPart upperbody_13;
+	private final ModelPart upperbody_14;
+	private final ModelPart upperbody_15;
+	private final ModelPart upperbody_16;
+	private final ModelPart upperbody_17;
+	private final ModelPart upperleftleg_78;
+	private final ModelPart lowerleftleg_77;
+	private final ModelPart leftfoot_76;
+	private final ModelPart leftfoot_73;
+	private final ModelPart leftfoot_74;
+	private final ModelPart leftfoot_75;
+	private final ModelPart lowerleftleg_72;
+	private final ModelPart upperleftleg_70;
+	private final ModelPart upperleftleg_71;
+	private final ModelPart upperrightleg_87;
+	private final ModelPart lowerrightleg_86;
+	private final ModelPart rightfoot_85;
+	private final ModelPart rightfoot_82;
+	private final ModelPart rightfoot_83;
+	private final ModelPart rightfoot_84;
+	private final ModelPart lowerrightleg_81;
+	private final ModelPart upperrightleg_79;
+	private final ModelPart upperrightleg_80;
+	private final ModelPart lowerbody_0;
+	private final ModelPart lowerbody_1;
+	private final ModelPart lowerbody_2;
+	private final ModelPart lowerbody_3;
+	private final ModelPart lowerbody_4;
+	private final ModelPart lowerbody_5;
+	private final ModelPart lowerbody_6;
+	private final ModelPart lowerbody_7;
+
+	public Modelthe_irritator(ModelPart root) {
+		this.Sketchfab_model = root.getChild("Sketchfab_model");
+		this.root = this.Sketchfab_model.getChild("root");
+		this.GLTF_SceneRootNode = this.root.getChild("GLTF_SceneRootNode");
+		this._90 = this.GLTF_SceneRootNode.getChild("_90");
+		this.base_89 = this._90.getChild("base_89");
+		this.lowerbody_88 = this.base_89.getChild("lowerbody_88");
+		this.upperbody_69 = this.lowerbody_88.getChild("upperbody_69");
+		this.neck_38 = this.upperbody_69.getChild("neck_38");
+		this.ne_37 = this.neck_38.getChild("ne_37");
+		this.head_36 = this.ne_37.getChild("head_36");
+		this.jaw_35 = this.head_36.getChild("jaw_35");
+		this.jaw_30 = this.jaw_35.getChild("jaw_30");
+		this.jaw_31 = this.jaw_35.getChild("jaw_31");
+		this.jaw_32 = this.jaw_35.getChild("jaw_32");
+		this.jaw_33 = this.jaw_35.getChild("jaw_33");
+		this.jaw_34 = this.jaw_35.getChild("jaw_34");
+		this.head_20 = this.head_36.getChild("head_20");
+		this.head_21 = this.head_36.getChild("head_21");
+		this.head_22 = this.head_36.getChild("head_22");
+		this.head_23 = this.head_36.getChild("head_23");
+		this.head_24 = this.head_36.getChild("head_24");
+		this.head_25 = this.head_36.getChild("head_25");
+		this.head_26 = this.head_36.getChild("head_26");
+		this.head_27 = this.head_36.getChild("head_27");
+		this.head_28 = this.head_36.getChild("head_28");
+		this.head_29 = this.head_36.getChild("head_29");
+		this.ne_19 = this.ne_37.getChild("ne_19");
+		this.neck_18 = this.neck_38.getChild("neck_18");
+		this.rightupperarm_53 = this.upperbody_69.getChild("rightupperarm_53");
+		this.rightlowerarm_52 = this.rightupperarm_53.getChild("rightlowerarm_52");
+		this.righthand_51 = this.rightlowerarm_52.getChild("righthand_51");
+		this.righthand_44 = this.righthand_51.getChild("righthand_44");
+		this.righthand_45 = this.righthand_51.getChild("righthand_45");
+		this.righthand_46 = this.righthand_51.getChild("righthand_46");
+		this.righthand_47 = this.righthand_51.getChild("righthand_47");
+		this.righthand_48 = this.righthand_51.getChild("righthand_48");
+		this.righthand_49 = this.righthand_51.getChild("righthand_49");
+		this.righthand_50 = this.righthand_51.getChild("righthand_50");
+		this.rightlowerarm_42 = this.rightlowerarm_52.getChild("rightlowerarm_42");
+		this.rightlowerarm_43 = this.rightlowerarm_52.getChild("rightlowerarm_43");
+		this.rightupperarm_39 = this.rightupperarm_53.getChild("rightupperarm_39");
+		this.rightupperarm_40 = this.rightupperarm_53.getChild("rightupperarm_40");
+		this.rightupperarm_41 = this.rightupperarm_53.getChild("rightupperarm_41");
+		this.leftupperarm_68 = this.upperbody_69.getChild("leftupperarm_68");
+		this.leftlowerarm_67 = this.leftupperarm_68.getChild("leftlowerarm_67");
+		this.lefthand_66 = this.leftlowerarm_67.getChild("lefthand_66");
+		this.lefthand_59 = this.lefthand_66.getChild("lefthand_59");
+		this.lefthand_60 = this.lefthand_66.getChild("lefthand_60");
+		this.lefthand_61 = this.lefthand_66.getChild("lefthand_61");
+		this.lefthand_62 = this.lefthand_66.getChild("lefthand_62");
+		this.lefthand_63 = this.lefthand_66.getChild("lefthand_63");
+		this.lefthand_64 = this.lefthand_66.getChild("lefthand_64");
+		this.lefthand_65 = this.lefthand_66.getChild("lefthand_65");
+		this.leftlowerarm_57 = this.leftlowerarm_67.getChild("leftlowerarm_57");
+		this.leftlowerarm_58 = this.leftlowerarm_67.getChild("leftlowerarm_58");
+		this.leftupperarm_54 = this.leftupperarm_68.getChild("leftupperarm_54");
+		this.leftupperarm_55 = this.leftupperarm_68.getChild("leftupperarm_55");
+		this.leftupperarm_56 = this.leftupperarm_68.getChild("leftupperarm_56");
+		this.upperbody_8 = this.upperbody_69.getChild("upperbody_8");
+		this.upperbody_9 = this.upperbody_69.getChild("upperbody_9");
+		this.upperbody_10 = this.upperbody_69.getChild("upperbody_10");
+		this.upperbody_11 = this.upperbody_69.getChild("upperbody_11");
+		this.upperbody_12 = this.upperbody_69.getChild("upperbody_12");
+		this.upperbody_13 = this.upperbody_69.getChild("upperbody_13");
+		this.upperbody_14 = this.upperbody_69.getChild("upperbody_14");
+		this.upperbody_15 = this.upperbody_69.getChild("upperbody_15");
+		this.upperbody_16 = this.upperbody_69.getChild("upperbody_16");
+		this.upperbody_17 = this.upperbody_69.getChild("upperbody_17");
+		this.upperleftleg_78 = this.lowerbody_88.getChild("upperleftleg_78");
+		this.lowerleftleg_77 = this.upperleftleg_78.getChild("lowerleftleg_77");
+		this.leftfoot_76 = this.lowerleftleg_77.getChild("leftfoot_76");
+		this.leftfoot_73 = this.leftfoot_76.getChild("leftfoot_73");
+		this.leftfoot_74 = this.leftfoot_76.getChild("leftfoot_74");
+		this.leftfoot_75 = this.leftfoot_76.getChild("leftfoot_75");
+		this.lowerleftleg_72 = this.lowerleftleg_77.getChild("lowerleftleg_72");
+		this.upperleftleg_70 = this.upperleftleg_78.getChild("upperleftleg_70");
+		this.upperleftleg_71 = this.upperleftleg_78.getChild("upperleftleg_71");
+		this.upperrightleg_87 = this.lowerbody_88.getChild("upperrightleg_87");
+		this.lowerrightleg_86 = this.upperrightleg_87.getChild("lowerrightleg_86");
+		this.rightfoot_85 = this.lowerrightleg_86.getChild("rightfoot_85");
+		this.rightfoot_82 = this.rightfoot_85.getChild("rightfoot_82");
+		this.rightfoot_83 = this.rightfoot_85.getChild("rightfoot_83");
+		this.rightfoot_84 = this.rightfoot_85.getChild("rightfoot_84");
+		this.lowerrightleg_81 = this.lowerrightleg_86.getChild("lowerrightleg_81");
+		this.upperrightleg_79 = this.upperrightleg_87.getChild("upperrightleg_79");
+		this.upperrightleg_80 = this.upperrightleg_87.getChild("upperrightleg_80");
+		this.lowerbody_0 = this.lowerbody_88.getChild("lowerbody_0");
+		this.lowerbody_1 = this.lowerbody_88.getChild("lowerbody_1");
+		this.lowerbody_2 = this.lowerbody_88.getChild("lowerbody_2");
+		this.lowerbody_3 = this.lowerbody_88.getChild("lowerbody_3");
+		this.lowerbody_4 = this.lowerbody_88.getChild("lowerbody_4");
+		this.lowerbody_5 = this.lowerbody_88.getChild("lowerbody_5");
+		this.lowerbody_6 = this.lowerbody_88.getChild("lowerbody_6");
+		this.lowerbody_7 = this.lowerbody_88.getChild("lowerbody_7");
+	}
+
+	public static LayerDefinition createBodyLayer() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition Sketchfab_model = partdefinition.addOrReplaceChild("Sketchfab_model", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition root = Sketchfab_model.addOrReplaceChild("root", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition GLTF_SceneRootNode = root.addOrReplaceChild("GLTF_SceneRootNode", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition _90 = GLTF_SceneRootNode.addOrReplaceChild("_90", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition base_89 = _90.addOrReplaceChild("base_89", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, -79.625F, -3.25F, 1.5708F, -0.2618F, -1.5708F));
+
+		PartDefinition lowerbody_88 = base_89.addOrReplaceChild("lowerbody_88", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0873F));
+
+		PartDefinition upperbody_69 = lowerbody_88.addOrReplaceChild("upperbody_69", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, -29.562F, 0.0F, 0.0F, 0.0F, 0.2618F));
+
+		PartDefinition neck_38 = upperbody_69.addOrReplaceChild("neck_38", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-8.4463F, -38.0083F, 0.0F, 0.0F, 0.0F, 0.6981F));
+
+		PartDefinition ne_37 = neck_38.addOrReplaceChild("ne_37", CubeListBuilder.create(),
+				PartPose.offset(-8.0313F, -16.5114F, 0.0F));
+
+		PartDefinition head_36 = ne_37.addOrReplaceChild("head_36", CubeListBuilder.create(),
+				PartPose.offset(-28.2599F, 33.7559F, 0.0104F));
+
+		PartDefinition jaw_35 = head_36.addOrReplaceChild("jaw_35", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.3945F, -0.3519F, -0.0104F, 0.0F, 0.0F, -1.2217F));
+
+		PartDefinition jaw_30 = jaw_35.addOrReplaceChild("jaw_30", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(10.5118F, 117.1508F, 0.0F, 0.0F, 0.0F, -0.2182F));
+
+		PartDefinition jaw_31 = jaw_35.addOrReplaceChild("jaw_31", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-4.3821F, 5.1841F, 0.0F, 0.0F, 0.0F, 0.7854F));
+
+		PartDefinition jaw_32 = jaw_35.addOrReplaceChild("jaw_32", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.7854F));
+
+		PartDefinition jaw_33 = jaw_35.addOrReplaceChild("jaw_33", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-8.125F, -8.125F, -9.75F, -1.5708F, 0.0F, -0.7854F));
+
+		PartDefinition jaw_34 = jaw_35.addOrReplaceChild("jaw_34", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-6.5F, -6.5F, 11.375F, 1.5708F, 0.0F, -0.7854F));
+
+		PartDefinition head_20 = head_36.addOrReplaceChild("head_20", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-4.3491F, 39.9306F, -0.0035F, 0.0F, 0.0F, 0.3491F));
+
+		PartDefinition head_21 = head_36.addOrReplaceChild("head_21", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-13.5789F, -27.5184F, 2.4593F, 3.1416F, 0.0F, 1.6581F));
+
+		PartDefinition head_22 = head_36.addOrReplaceChild("head_22", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-10.3289F, -27.5184F, 2.4593F, 3.1416F, 0.0F, 1.6581F));
+
+		PartDefinition head_23 = head_36.addOrReplaceChild("head_23", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-16.8289F, -27.5184F, 2.4593F, 1.5298F, 0.0287F, 1.3075F));
+
+		PartDefinition head_24 = head_36.addOrReplaceChild("head_24", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-16.8289F, -27.5184F, 5.7093F, 1.5298F, 0.0287F, 1.3075F));
+
+		PartDefinition head_25 = head_36.addOrReplaceChild("head_25", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-15.2039F, -27.5184F, 2.4593F, -1.5773F, -0.0925F, 1.3966F));
+
+		PartDefinition head_26 = head_36.addOrReplaceChild("head_26", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-15.2039F, -27.5184F, -0.7907F, -1.5773F, -0.0925F, 1.3966F));
+
+		PartDefinition head_27 = head_36.addOrReplaceChild("head_27", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 4.875F, -0.1828F, -0.3006F, 0.4474F));
+
+		PartDefinition head_28 = head_36.addOrReplaceChild("head_28", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-19.4F, 0.0F, -13.0F, -0.1828F, 0.3006F, -0.4474F));
+
+		PartDefinition head_29 = head_36.addOrReplaceChild("head_29", CubeListBuilder.create(),
+				PartPose.offset(44.7375F, 129.9508F, 3.2396F));
+
+		PartDefinition ne_19 = ne_37.addOrReplaceChild("ne_19", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(2.9754F, 3.0982F, 0.0F, 0.0F, 0.0F, -2.3562F));
+
+		PartDefinition neck_18 = neck_38.addOrReplaceChild("neck_18", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-3.1563F, -5.1364F, 0.0F, 0.0F, 0.0F, -0.829F));
+
+		PartDefinition rightupperarm_53 = upperbody_69.addOrReplaceChild("rightupperarm_53", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, -33.7852F, 16.8926F, 0.2307F, -0.0668F, 0.8708F));
+
+		PartDefinition rightlowerarm_52 = rightupperarm_53.addOrReplaceChild("rightlowerarm_52",
+				CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 50.6778F, 4.2231F, -0.0618F, 0.0617F, 0.7835F));
+
+		PartDefinition righthand_51 = rightlowerarm_52.addOrReplaceChild("righthand_51", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 76.0166F, 1.625F, -1.6144F, -1.5272F, 3.1416F));
+
+		PartDefinition righthand_44 = righthand_51.addOrReplaceChild("righthand_44", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 16.2778F, -19.4907F));
+
+		PartDefinition righthand_45 = righthand_51.addOrReplaceChild("righthand_45", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 16.2778F, -17.8657F, 0.0F, 0.0F, -0.0436F));
+
+		PartDefinition righthand_46 = righthand_51.addOrReplaceChild("righthand_46", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-8.125F, 16.2778F, -17.8657F, 0.0F, 0.0F, 0.3054F));
+
+		PartDefinition righthand_47 = righthand_51.addOrReplaceChild("righthand_47", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(8.125F, 16.2778F, -17.8657F, 0.0F, 0.0F, -0.3491F));
+
+		PartDefinition righthand_48 = righthand_51.addOrReplaceChild("righthand_48", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 21.1157F, -16.8926F, -1.1781F, 0.0F, 0.0F));
+
+		PartDefinition righthand_49 = righthand_51.addOrReplaceChild("righthand_49", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-8.125F, 21.1157F, -16.8926F, -1.1781F, 0.0F, 0.0F));
+
+		PartDefinition righthand_50 = righthand_51.addOrReplaceChild("righthand_50", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(8.125F, 21.1157F, -16.8926F, -1.1781F, 0.0F, 0.0F));
+
+		PartDefinition rightlowerarm_42 = rightlowerarm_52.addOrReplaceChild("rightlowerarm_42",
+				CubeListBuilder.create(), PartPose.offset(0.0F, 92.2944F, -17.8657F));
+
+		PartDefinition rightlowerarm_43 = rightlowerarm_52.addOrReplaceChild("rightlowerarm_43",
+				CubeListBuilder.create(), PartPose.offsetAndRotation(9.75F, 92.2944F, -14.6157F, 0.0F, -0.6981F, 0.0F));
+
+		PartDefinition rightupperarm_39 = rightupperarm_53.addOrReplaceChild("rightupperarm_39",
+				CubeListBuilder.create(), PartPose.offset(0.0F, 142.9722F, -13.6426F));
+
+		PartDefinition rightupperarm_40 = rightupperarm_53.addOrReplaceChild("rightupperarm_40",
+				CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-14.625F, 142.9722F, -7.1426F, 0.0F, 0.9599F, 0.0F));
+
+		PartDefinition rightupperarm_41 = rightupperarm_53.addOrReplaceChild("rightupperarm_41",
+				CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 122.4712F, -12.6695F, 0.0F, 0.0F, 0.0436F));
+
+		PartDefinition leftupperarm_68 = upperbody_69.addOrReplaceChild("leftupperarm_68", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, -33.7852F, -16.8926F, -0.318F, 0.0668F, 0.8708F));
+
+		PartDefinition leftlowerarm_67 = leftupperarm_68.addOrReplaceChild("leftlowerarm_67", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 50.6778F, 0.0F, 0.0669F, -0.0561F, 0.6963F));
+
+		PartDefinition lefthand_66 = leftlowerarm_67.addOrReplaceChild("lefthand_66", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-4.2231F, 76.0166F, -7.4731F, 0.0F, 1.5708F, 1.7017F));
+
+		PartDefinition lefthand_59 = lefthand_66.addOrReplaceChild("lefthand_59", CubeListBuilder.create(),
+				PartPose.offset(4.2231F, 16.2778F, 27.6157F));
+
+		PartDefinition lefthand_60 = lefthand_66.addOrReplaceChild("lefthand_60", CubeListBuilder.create(),
+				PartPose.offset(4.2231F, 16.2778F, 27.6157F));
+
+		PartDefinition lefthand_61 = lefthand_66.addOrReplaceChild("lefthand_61", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-2.2769F, 16.2778F, 24.3657F, 0.0F, 0.0F, 0.3927F));
+
+		PartDefinition lefthand_62 = lefthand_66.addOrReplaceChild("lefthand_62", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(12.3481F, 11.4028F, 24.3657F, 0.0F, 0.0F, -0.48F));
+
+		PartDefinition lefthand_63 = lefthand_66.addOrReplaceChild("lefthand_63", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-2.579F, 21.0596F, 16.8926F, 1.3526F, 0.0F, 0.0F));
+
+		PartDefinition lefthand_64 = lefthand_66.addOrReplaceChild("lefthand_64", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(7.171F, 21.0596F, 16.8926F, 1.3526F, 0.0F, 0.0F));
+
+		PartDefinition lefthand_65 = lefthand_66.addOrReplaceChild("lefthand_65", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-9.079F, 21.0596F, 16.8926F, 1.3526F, 0.0F, 0.0F));
+
+		PartDefinition leftlowerarm_57 = leftlowerarm_67.addOrReplaceChild("leftlowerarm_57", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(19.5F, 92.2944F, 5.5176F, 0.0F, 1.0472F, 0.0F));
+
+		PartDefinition leftlowerarm_58 = leftlowerarm_67.addOrReplaceChild("leftlowerarm_58", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 92.2944F, 20.1426F));
+
+		PartDefinition leftupperarm_54 = leftupperarm_68.addOrReplaceChild("leftupperarm_54", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 142.9722F, 20.1426F));
+
+		PartDefinition leftupperarm_55 = leftupperarm_68.addOrReplaceChild("leftupperarm_55", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-16.25F, 142.9722F, 16.8926F, 0.0F, -0.6981F, 0.0F));
+
+		PartDefinition leftupperarm_56 = leftupperarm_68.addOrReplaceChild("leftupperarm_56", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-2.579F, 122.4151F, 12.6695F, 0.0F, 0.0F, 0.0436F));
+
+		PartDefinition upperbody_8 = upperbody_69.addOrReplaceChild("upperbody_8", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, -4.2231F, 0.0F, 0.0F, 0.0F, -0.2182F));
+
+		PartDefinition upperbody_9 = upperbody_69.addOrReplaceChild("upperbody_9", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 51.586F, 0.0F, 0.0F, 0.0F, -0.2182F));
+
+		PartDefinition upperbody_10 = upperbody_69.addOrReplaceChild("upperbody_10", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-4.875F, 51.586F, 0.0F, 0.0F, 0.0F, -0.2182F));
+
+		PartDefinition upperbody_11 = upperbody_69.addOrReplaceChild("upperbody_11", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-4.875F, 51.586F, 0.0F, 0.0F, -0.2182F, -0.2182F));
+
+		PartDefinition upperbody_12 = upperbody_69.addOrReplaceChild("upperbody_12", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-4.875F, 51.586F, 0.0F, 0.0F, 0.2182F, -0.2182F));
+
+		PartDefinition upperbody_13 = upperbody_69.addOrReplaceChild("upperbody_13", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.4363F, 0.0F, 0.0F));
+
+		PartDefinition upperbody_14 = upperbody_69.addOrReplaceChild("upperbody_14", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.4363F, 0.0F, 0.0F));
+
+		PartDefinition upperbody_15 = upperbody_69.addOrReplaceChild("upperbody_15", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.1309F, 0.48F, 0.1309F));
+
+		PartDefinition upperbody_16 = upperbody_69.addOrReplaceChild("upperbody_16", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.1309F, -0.48F, 0.1309F));
+
+		PartDefinition upperbody_17 = upperbody_69.addOrReplaceChild("upperbody_17", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.1309F));
+
+		PartDefinition upperleftleg_78 = lowerbody_88.addOrReplaceChild("upperleftleg_78", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, -8.4463F, 0.0F, 0.0F, 0.5236F));
+
+		PartDefinition lowerleftleg_77 = upperleftleg_78.addOrReplaceChild("lowerleftleg_77", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 29.562F, 0.0F, 0.0F, 0.0F, 0.4363F));
+
+		PartDefinition leftfoot_76 = lowerleftleg_77.addOrReplaceChild("leftfoot_76", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 33.7852F, 0.0F, 0.0F, 0.0F, 0.1745F));
+
+		PartDefinition leftfoot_73 = leftfoot_76.addOrReplaceChild("leftfoot_73", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 16.2778F, 11.6963F));
+
+		PartDefinition leftfoot_74 = leftfoot_76.addOrReplaceChild("leftfoot_74", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 16.2778F, 11.6963F));
+
+		PartDefinition leftfoot_75 = leftfoot_76.addOrReplaceChild("leftfoot_75", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 18.1521F, -31.0685F, 0.0F, 0.0F, -0.4363F));
+
+		PartDefinition lowerleftleg_72 = lowerleftleg_77.addOrReplaceChild("lowerleftleg_72", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 50.063F, 11.6963F));
+
+		PartDefinition upperleftleg_70 = upperleftleg_78.addOrReplaceChild("upperleftleg_70", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 79.625F, 11.6963F));
+
+		PartDefinition upperleftleg_71 = upperleftleg_78.addOrReplaceChild("upperleftleg_71", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 63.3472F, 8.4463F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition upperrightleg_87 = lowerbody_88.addOrReplaceChild("upperrightleg_87", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 8.4463F, 0.0F, 0.0F, 0.5236F));
+
+		PartDefinition lowerrightleg_86 = upperrightleg_87.addOrReplaceChild("lowerrightleg_86",
+				CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 29.562F, 0.0F, 0.0F, 0.0F, 0.4363F));
+
+		PartDefinition rightfoot_85 = lowerrightleg_86.addOrReplaceChild("rightfoot_85", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 33.7852F, 0.0F, 0.0F, 0.0F, 0.1309F));
+
+		PartDefinition rightfoot_82 = rightfoot_85.addOrReplaceChild("rightfoot_82", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 16.2778F, -5.1963F));
+
+		PartDefinition rightfoot_83 = rightfoot_85.addOrReplaceChild("rightfoot_83", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 16.2778F, -5.1963F));
+
+		PartDefinition rightfoot_84 = rightfoot_85.addOrReplaceChild("rightfoot_84", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 18.1521F, -47.9611F, 0.0F, 0.0F, -0.3927F));
+
+		PartDefinition lowerrightleg_81 = lowerrightleg_86.addOrReplaceChild("lowerrightleg_81",
+				CubeListBuilder.create(), PartPose.offset(0.0F, 50.063F, -5.1963F));
+
+		PartDefinition upperrightleg_79 = upperrightleg_87.addOrReplaceChild("upperrightleg_79",
+				CubeListBuilder.create(), PartPose.offset(0.0F, 79.625F, -5.1963F));
+
+		PartDefinition upperrightleg_80 = upperrightleg_87.addOrReplaceChild("upperrightleg_80",
+				CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 63.3472F, -8.4463F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition lowerbody_0 = lowerbody_88.addOrReplaceChild("lowerbody_0", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 63.3472F, 0.0F, 0.0F, 0.0F, 0.2618F));
+
+		PartDefinition lowerbody_1 = lowerbody_88.addOrReplaceChild("lowerbody_1", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.1745F, 0.0F, 0.0F));
+
+		PartDefinition lowerbody_2 = lowerbody_88.addOrReplaceChild("lowerbody_2", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-24.375F, 46.399F, 0.0F, 0.0F, 0.0F, 0.1309F));
+
+		PartDefinition lowerbody_3 = lowerbody_88.addOrReplaceChild("lowerbody_3", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-24.375F, 46.399F, 0.0F, 0.0F, -0.2182F, 0.1309F));
+
+		PartDefinition lowerbody_4 = lowerbody_88.addOrReplaceChild("lowerbody_4", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(-24.375F, 46.399F, 0.0F, 0.0F, 0.2182F, 0.1309F));
+
+		PartDefinition lowerbody_5 = lowerbody_88.addOrReplaceChild("lowerbody_5", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -2.9671F, 0.0F, 3.1416F));
+
+		PartDefinition lowerbody_6 = lowerbody_88.addOrReplaceChild("lowerbody_6", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.1745F));
+
+		PartDefinition lowerbody_7 = lowerbody_88.addOrReplaceChild("lowerbody_7", CubeListBuilder.create(),
+				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.2182F));
+
+		return LayerDefinition.create(meshdefinition, 16, 16);
+	}
+
+	@Override
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay,
+			float red, float green, float blue, float alpha) {
+		Sketchfab_model.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	}
+
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+			float headPitch) {
+	}
+}

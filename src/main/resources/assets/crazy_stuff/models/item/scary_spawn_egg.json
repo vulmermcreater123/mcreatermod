@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "crazy_stuff:item/scary_spawn_egg_generated"
+  }
+}

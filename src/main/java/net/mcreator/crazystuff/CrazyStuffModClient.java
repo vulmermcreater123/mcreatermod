@@ -1,5 +1,8 @@
 package net.mcreator.crazystuff;
 
+import net.mcreator.crazystuff.init.CrazyStuffModModels;
+import net.mcreator.crazystuff.init.CrazyStuffModEntityRenderers;
+
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ClientModInitializer;
@@ -10,6 +13,8 @@ public class CrazyStuffModClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
+		CrazyStuffModModels.clientLoad();
+		CrazyStuffModEntityRenderers.clientLoad();
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

@@ -4,6 +4,7 @@
 package net.mcreator.crazystuff.init;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
@@ -22,12 +23,14 @@ public class CrazyStuffModItems {
 	public static Item SLANGBELLA;
 	public static Item ROCK;
 	public static Item AMOS_BLOCK;
+	public static Item SCARY_SPAWN_EGG;
 
 	public static void load() {
 		SMACH_HAMMER = register("smach_hammer", SmachHammerItem::new);
 		SLANGBELLA = register("slangbella", SlangbellaItem::new);
 		ROCK = block(CrazyStuffModBlocks.ROCK, "rock", new Item.Properties().stacksTo(12));
 		AMOS_BLOCK = block(CrazyStuffModBlocks.AMOS_BLOCK, "amos_block");
+		SCARY_SPAWN_EGG = register("scary_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(CrazyStuffModEntities.SCARY)));
 	}
 
 	// Start of user code block custom items

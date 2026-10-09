@@ -9,5 +9,7 @@
   "death.attack.tripped_on_a_rock": "%1$s Tripped On a Rock",
   "item.crazy_stuff.amos_block": "Amos Block",
   "advancements.smaching_birds.descr": "craft a hammer",
-  "advancements.smaching_birds.title": "Smaching Birds"
+  "advancements.smaching_birds.title": "Smaching Birds",
+  "item.crazy_stuff.scary_spawn_egg": "¨Irritator Spawn Egg",
+  "entity.crazy_stuff.scary": "¨Irritator"
 }

@@ -8,11 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.server.TickTask;
 
-import net.mcreator.crazystuff.init.CrazyStuffModTabs;
-import net.mcreator.crazystuff.init.CrazyStuffModItems;
-import net.mcreator.crazystuff.init.CrazyStuffModFeatures;
-import net.mcreator.crazystuff.init.CrazyStuffModCommands;
-import net.mcreator.crazystuff.init.CrazyStuffModBlocks;
+import net.mcreator.crazystuff.init.*;
 
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -42,6 +38,7 @@ public class CrazyStuffMod implements ModInitializer {
 		LOGGER.info("Initializing CrazyStuffMod");
 		CrazyStuffModTabs.load();
 		CrazyStuffModFeatures.load();
+		CrazyStuffModEntities.load();
 		CrazyStuffModBlocks.load();
 		CrazyStuffModItems.load();
 		CrazyStuffModCommands.load();

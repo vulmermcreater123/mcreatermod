@@ -6,6 +6,7 @@ package net.mcreator.crazystuff.init;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
@@ -15,6 +16,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Registry;
 
 import net.mcreator.crazystuff.CrazyStuffMod;
+
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 
 public class CrazyStuffModTabs {
 	public static ResourceKey<CreativeModeTab> TAB_COOLSTUFF = ResourceKey.create(Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(CrazyStuffMod.MODID, "coolstuff"));
@@ -31,5 +34,8 @@ public class CrazyStuffModTabs {
 				CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0).title(Component.translatable("item_group.crazy_stuff.poop")).icon(() -> new ItemStack(Items.TADPOLE_SPAWN_EGG)).displayItems((parameters, tabData) -> {
 					tabData.accept(CrazyStuffModBlocks.AMOS_BLOCK.asItem());
 				}).build());
+		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.SPAWN_EGGS).register(tabData -> {
+			tabData.accept(CrazyStuffModItems.SCARY_SPAWN_EGG);
+		});
 	}
 }

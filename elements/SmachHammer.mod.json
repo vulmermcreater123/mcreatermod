@@ -5,7 +5,7 @@
     "renderType": 1,
     "texture": "smachhammer",
     "customModelName": "thor-hammer_-_converted:default",
-    "guiTexture": "",
+    "guiTexture": "smachhammer",
     "customProperties": {},
     "states": [],
     "animations": [],
