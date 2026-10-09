@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "crazy_stuff:block/amos",
+    "up": "crazy_stuff:block/amos",
+    "north": "crazy_stuff:block/amos",
+    "east": "crazy_stuff:block/amos",
+    "south": "crazy_stuff:block/amos",
+    "west": "crazy_stuff:block/amos",
+    "particle": "crazy_stuff:block/amos"
+  }
+}

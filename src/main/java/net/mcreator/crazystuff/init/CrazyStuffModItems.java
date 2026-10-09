@@ -21,11 +21,13 @@ public class CrazyStuffModItems {
 	public static Item SMACH_HAMMER;
 	public static Item SLANGBELLA;
 	public static Item ROCK;
+	public static Item AMOS_BLOCK;
 
 	public static void load() {
 		SMACH_HAMMER = register("smach_hammer", SmachHammerItem::new);
 		SLANGBELLA = register("slangbella", SlangbellaItem::new);
 		ROCK = block(CrazyStuffModBlocks.ROCK, "rock", new Item.Properties().stacksTo(12));
+		AMOS_BLOCK = block(CrazyStuffModBlocks.AMOS_BLOCK, "amos_block");
 	}
 
 	// Start of user code block custom items

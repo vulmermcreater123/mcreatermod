@@ -11,15 +11,18 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.crazystuff.block.RockBlock;
+import net.mcreator.crazystuff.block.AmosBlockBlock;
 import net.mcreator.crazystuff.CrazyStuffMod;
 
 import java.util.function.Function;
 
 public class CrazyStuffModBlocks {
 	public static Block ROCK;
+	public static Block AMOS_BLOCK;
 
 	public static void load() {
 		ROCK = register("rock", RockBlock::new);
+		AMOS_BLOCK = register("amos_block", AmosBlockBlock::new);
 	}
 
 	// Start of user code block custom blocks
