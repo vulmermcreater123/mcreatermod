@@ -11,6 +11,7 @@ import net.minecraft.server.TickTask;
 import net.mcreator.crazystuff.init.CrazyStuffModTabs;
 import net.mcreator.crazystuff.init.CrazyStuffModItems;
 import net.mcreator.crazystuff.init.CrazyStuffModFeatures;
+import net.mcreator.crazystuff.init.CrazyStuffModCommands;
 import net.mcreator.crazystuff.init.CrazyStuffModBlocks;
 
 import net.fabricmc.loader.api.FabricLoader;
@@ -43,6 +44,7 @@ public class CrazyStuffMod implements ModInitializer {
 		CrazyStuffModFeatures.load();
 		CrazyStuffModBlocks.load();
 		CrazyStuffModItems.load();
+		CrazyStuffModCommands.load();
 		tick();
 		// Start of user code block mod init
 		// End of user code block mod init

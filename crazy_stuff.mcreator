@@ -195,6 +195,36 @@
           "src/main/resources/assets/crazy_stuff/blockstates/amos_block.json"
         ]
       }
+    },
+    {
+      "name": "Amos",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amos",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/command/AmosCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Amosproc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amosproc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/procedures/AmosprocProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -205,14 +235,14 @@
       "~SmachHammer@Blocks.HEAVY_CORE",
       "~SmachHammer@Items.BREEZE_ROD"
     ],
-    "ITEMS:minecraft:enchantable/durability": [
-      "~SmachHammer@CUSTOM:SmachHammer"
-    ],
     "BLOCKS:minecraft:buttons": [
       "~Rock@CUSTOM:Rock"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Rock@CUSTOM:Rock"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~SmachHammer@CUSTOM:SmachHammer"
     ]
   },
   "tab_element_order": {},
@@ -231,6 +261,7 @@
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModCommands.java",
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModBlocks.java",
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModItems.java",
       "src/main/java/net/mcreator/crazystuff/mixin/RepairItemRecipeMixin.java",
