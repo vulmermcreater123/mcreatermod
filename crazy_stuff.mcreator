@@ -249,19 +249,6 @@
           "src/main/java/net/mcreator/crazystuff/command/StartscarystuffCommand.java"
         ]
       }
-    },
-    {
-      "name": "Scary",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "scary",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/crazystuff/procedures/ScaryProcedure.java"
-        ]
-      }
     }
   ],
   "variable_elements": [],
