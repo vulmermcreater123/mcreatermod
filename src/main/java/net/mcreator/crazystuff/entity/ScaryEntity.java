@@ -13,7 +13,6 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.Identifier;
@@ -28,8 +27,6 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import java.util.function.Predicate;
 
 public class ScaryEntity extends Monster {
-	public final AnimationState animationState0 = new AnimationState();
-
 	public ScaryEntity(EntityType<ScaryEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
@@ -59,14 +56,6 @@ public class ScaryEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.generic.death"));
-	}
-
-	@Override
-	public void tick() {
-		super.tick();
-		if (this.level().isClientSide()) {
-			this.animationState0.animateWhen(true, this.tickCount);
-		}
 	}
 
 	private static final Predicate<BiomeSelectionContext> GENERATE_BIOMES = BiomeSelectors.all();
