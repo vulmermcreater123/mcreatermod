@@ -29,7 +29,7 @@ public class SmachHammerLivingEntityIsHitWithItemProcedure {
 				_ent.hurtServer(_serverLevel, new DamageSource(world.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.MACE_SMASH)), 6);
 			}
 		}
-		CrazyStuffMod.queueServerWork(140, () -> {
+		CrazyStuffMod.queueServerWork(10, () -> {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
