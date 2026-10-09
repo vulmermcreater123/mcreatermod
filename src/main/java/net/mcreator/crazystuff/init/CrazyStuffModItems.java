@@ -14,6 +14,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.crazystuff.item.SmachHammerItem;
 import net.mcreator.crazystuff.item.SlangbellaItem;
+import net.mcreator.crazystuff.item.Book1Item;
 import net.mcreator.crazystuff.CrazyStuffMod;
 
 import java.util.function.Function;
@@ -24,6 +25,7 @@ public class CrazyStuffModItems {
 	public static Item ROCK;
 	public static Item AMOS_BLOCK;
 	public static Item SCARY_SPAWN_EGG;
+	public static Item BOOK_1;
 
 	public static void load() {
 		SMACH_HAMMER = register("smach_hammer", SmachHammerItem::new);
@@ -31,6 +33,7 @@ public class CrazyStuffModItems {
 		ROCK = block(CrazyStuffModBlocks.ROCK, "rock", new Item.Properties().stacksTo(12));
 		AMOS_BLOCK = block(CrazyStuffModBlocks.AMOS_BLOCK, "amos_block");
 		SCARY_SPAWN_EGG = register("scary_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(CrazyStuffModEntities.SCARY)));
+		BOOK_1 = register("book_1", Book1Item::new);
 	}
 
 	// Start of user code block custom items

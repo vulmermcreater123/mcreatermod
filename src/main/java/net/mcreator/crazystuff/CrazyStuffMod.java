@@ -41,6 +41,7 @@ public class CrazyStuffMod implements ModInitializer {
 		CrazyStuffModEntities.load();
 		CrazyStuffModBlocks.load();
 		CrazyStuffModItems.load();
+		CrazyStuffModMenus.load();
 		CrazyStuffModCommands.load();
 		tick();
 		// Start of user code block mod init

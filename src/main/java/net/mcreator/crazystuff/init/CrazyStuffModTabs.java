@@ -29,6 +29,7 @@ public class CrazyStuffModTabs {
 					tabData.accept(CrazyStuffModItems.SMACH_HAMMER);
 					tabData.accept(CrazyStuffModItems.SLANGBELLA);
 					tabData.accept(CrazyStuffModBlocks.ROCK.asItem());
+					tabData.accept(CrazyStuffModItems.BOOK_1);
 				}).build());
 		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, TAB_POOP,
 				CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0).title(Component.translatable("item_group.crazy_stuff.poop")).icon(() -> new ItemStack(Items.TADPOLE_SPAWN_EGG)).displayItems((parameters, tabData) -> {

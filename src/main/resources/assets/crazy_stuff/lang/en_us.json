@@ -11,5 +11,11 @@
   "advancements.smaching_birds.descr": "craft a hammer",
   "advancements.smaching_birds.title": "Smaching Birds",
   "item.crazy_stuff.scary_spawn_egg": "¨Irritator Spawn Egg",
-  "entity.crazy_stuff.scary": "¨Irritator"
+  "entity.crazy_stuff.scary": "¨Irritator",
+  "item.crazy_stuff.book_1": "Chapter 1",
+  "gui.crazy_stuff.chapter_1gui.label_heard_it_in_the_woods_far_from_a": "Heard It In the Woods Far From andy Human",
+  "gui.crazy_stuff.chapter_1gui.label_getting_closer_every_time": "getting closer every time.",
+  "gui.crazy_stuff.chapter_1gui.label_i_heard_it_scream_then_the_foots": "I Heard It Scream Then The Footsteps ",
+  "gui.crazy_stuff.chapter_1gui.label_its_wispering_in_my_ear": "Its Wispering In My ear.Its saying",
+  "gui.crazy_stuff.chapter_1gui.label_there_is_no_escape": "There Is no Escape"
 }

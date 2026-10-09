@@ -263,12 +263,51 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
         ],
         "files": [
           "src/main/java/net/mcreator/crazystuff/procedures/ScarystuffProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Book1",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/item/Book1Item.java",
+          "src/main/resources/assets/crazy_stuff/items/book_1.json",
+          "src/main/resources/assets/crazy_stuff/models/item/book_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Chapter1gui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chapter_1gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/client/gui/Chapter1guiScreen.java",
+          "src/main/java/net/mcreator/crazystuff/world/inventory/Chapter1guiMenu.java"
         ]
       }
     }
@@ -306,39 +345,48 @@
       "advancements.smaching_birds.descr": "craft a hammer",
       "advancements.smaching_birds.title": "Smaching Birds",
       "item.crazy_stuff.scary_spawn_egg": "¨Irritator Spawn Egg",
-      "entity.crazy_stuff.scary": "¨Irritator"
+      "entity.crazy_stuff.scary": "¨Irritator",
+      "item.crazy_stuff.book_1": "Chapter 1",
+      "gui.crazy_stuff.chapter_1gui.label_heard_it_in_the_woods_far_from_a": "Heard It In the Woods Far From andy Human",
+      "gui.crazy_stuff.chapter_1gui.label_getting_closer_every_time": "getting closer every time.",
+      "gui.crazy_stuff.chapter_1gui.label_i_heard_it_scream_then_the_foots": "I Heard It Scream Then The Footsteps ",
+      "gui.crazy_stuff.chapter_1gui.label_its_wispering_in_my_ear": "Its Wispering In My ear.Its saying",
+      "gui.crazy_stuff.chapter_1gui.label_there_is_no_escape": "There Is no Escape"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModCommands.java",
+      "src/main/java/net/mcreator/crazystuff/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModMenus.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModScreens.java",
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModBlocks.java",
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModItems.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/ServerPlayerMixin.java",
       "src/main/java/net/mcreator/crazystuff/mixin/RepairItemRecipeMixin.java",
-      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModEntityRenderers.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/ServerPlayerMixin.java",
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModEntities.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModEntityRenderers.java",
       "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModFeatures.java",
-      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModModels.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/LivingEntityMixin.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/PlayerMixin.java",
-      "src/main/java/net/mcreator/crazystuff/event/MiscEvents.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/ExperienceOrbMixin.java",
       "src/main/java/net/mcreator/crazystuff/mixin/BlockItemMixin.java",
-      "src/main/resources/crazy_stuff.mixins.json",
-      "src/main/java/net/mcreator/crazystuff/mixin/ItemStackMixin.java",
-      "src/main/java/net/mcreator/crazystuff/CrazyStuffMod.java",
-      "src/main/resources/fabric.mod.json",
-      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModTabs.java",
-      "src/main/java/net/mcreator/crazystuff/event/ItemEvents.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/BoneMealItemMixin.java",
-      "src/main/java/net/mcreator/crazystuff/mixin/CommandsMixin.java",
-      "src/main/resources/META-INF/crazy_stuff.classtweaker",
       "src/main/java/net/mcreator/crazystuff/event/LivingEntityEvents.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/LivingEntityMixin.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/CommandsMixin.java",
+      "src/main/resources/crazy_stuff.mixins.json",
       "src/main/java/net/mcreator/crazystuff/CrazyStuffModClient.java",
-      "src/main/java/net/mcreator/crazystuff/event/PlayerEvents.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/BoneMealItemMixin.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/crazystuff/event/BlockEvents.java"
+      "src/main/resources/fabric.mod.json",
+      "src/main/java/net/mcreator/crazystuff/event/BlockEvents.java",
+      "src/main/java/net/mcreator/crazystuff/event/MiscEvents.java",
+      "src/main/java/net/mcreator/crazystuff/CrazyStuffMod.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/ItemStackMixin.java",
+      "src/main/java/net/mcreator/crazystuff/event/PlayerEvents.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModModels.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/PlayerMixin.java",
+      "src/main/java/net/mcreator/crazystuff/event/ItemEvents.java",
+      "src/main/java/net/mcreator/crazystuff/mixin/ExperienceOrbMixin.java",
+      "src/main/java/net/mcreator/crazystuff/init/CrazyStuffModTabs.java",
+      "src/main/resources/META-INF/crazy_stuff.classtweaker"
     ]
   },
   "foldersRoot": {
