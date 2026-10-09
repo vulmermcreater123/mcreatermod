@@ -20,7 +20,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 public class CrazyStuffModEntities {
 	public static EntityType<ScaryEntity> SCARY = register("scary", EntityType.Builder.<ScaryEntity>of(ScaryEntity::new, MobCategory.MONSTER).clientTrackingRange(64).updateInterval(3)
 
-			.sized(0.6f, 1.8f));
+			.notInPeaceful().sized(0.6f, 1.8f));
 
 	public static void load() {
 		init();

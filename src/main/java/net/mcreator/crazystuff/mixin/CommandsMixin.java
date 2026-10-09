@@ -16,8 +16,7 @@ import com.mojang.brigadier.ParseResults;
 public abstract class CommandsMixin {
 	@Inject(method = "performCommand(Lcom/mojang/brigadier/ParseResults;Ljava/lang/String;)V", at = @At("HEAD"), cancellable = true)
 	public void performCommand(ParseResults<CommandSourceStack> parseResults, String string, CallbackInfo ci) {
-		boolean result = MiscEvents.COMMAND_EXECUTE.invoker().onCommandExecuted(parseResults);
-		if (!result)
+		if (!MiscEvents.COMMAND_EXECUTE.invoker().onCommandExecuted(parseResults))
 			ci.cancel();
 	}
 }

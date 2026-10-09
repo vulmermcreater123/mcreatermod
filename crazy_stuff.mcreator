@@ -253,6 +253,24 @@
           "src/main/java/net/mcreator/crazystuff/client/renderer/ScaryRenderer.java"
         ]
       }
+    },
+    {
+      "name": "Scarystuff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scarystuff",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/crazystuff/procedures/ScarystuffProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
